@@ -1,7 +1,7 @@
 package Array;
 import java.util.*;
 public class RemoveDuplicates {
-    public static int[] remove(int arr[]){
+    public static int remove(int arr[]){
         int index=1;  //position to place next unique element
         int n=arr.length;
         for(int i=1;i<arr.length;i++){ //index 0th element is taken as it is
@@ -10,7 +10,7 @@ public class RemoveDuplicates {
             }
         }
         //return only the unique portion
-        return Arrays.copyOf(arr,index);
+        return index;
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
