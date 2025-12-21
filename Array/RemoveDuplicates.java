@@ -22,9 +22,8 @@ public class RemoveDuplicates {
             arr[i]=sc.nextInt();
         }
 
-       int ans[]=remove(arr);
-        for(int i=0;i<ans.length;i++){
-            System.out.print(ans[i]+" ");
-        }
+       int ans=remove(arr);
+       System.out.println("length of array after removing duplicates:"+ans);
+        
     }
 }
