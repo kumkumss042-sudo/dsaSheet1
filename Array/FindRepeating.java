@@ -24,6 +24,14 @@ public class FindRepeating {
         }
         return finder;
     }
+     public static int find3(int arr[]){
+        HashMap<Integer,Integer> mp=new HashMap<>();
+        for(int num:arr){
+            if(mp.containsKey(num)) return num;
+            else mp.put(num,1);
+        }
+        return -1;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter size of an array");
@@ -35,7 +43,7 @@ public class FindRepeating {
         }
         int ele=find(arr);
         System.out.println("repeating ele:"+ele);
-        int ele1=find2(arr);
+        int ele1=find3(arr);
         System.out.println("repeating ele:"+ele1);
     }
 }
