@@ -11,11 +11,11 @@ public class SelectionSort {
             for(int j=i+1;j<n;j++){
                 if(arr[min]>arr[j]) {
                     min=j;
-                    int temp=arr[min];
-                    arr[min]=arr[i];  //swapping
-                    arr[i]=temp;
                 }
             }
+               int temp=arr[min];
+                    arr[min]=arr[i];  //swapping
+                    arr[i]=temp;
         }
     }
     public static void main(String[] args) {
